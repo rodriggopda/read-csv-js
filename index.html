@@ -11,16 +11,15 @@
 </head>
 <body>
   <div class="main">
-    <h1 class="title">CSV JS</h1>
-    <div class="box">
-      <h2 class="sub-title">Debug:</h2>
-      <table class="content-debug" style="display: table;">
-        <thead>
-          <tr class="t-header"></tr>
-        </thead>
-        <tbody class="t-body"></tbody>
-      </table>
-    </div>
+    <form action="">
+      <select name="cities" id="cities">
+        <option value="-">Selecione a cidade</option>
+      </select>
+      <input type="text" id="rad" placeholder="Irradiação" readonly>
+      <input type="text" id="consume" placeholder="Consumo">
+      <button id="calc" type="button">Calcular</button>
+    </form>
+    <h1>Potência do kit: <span id="pkit">0</span></h1>
   </div>
 
   <script src="assets/js/jquery.min.js"></script>
